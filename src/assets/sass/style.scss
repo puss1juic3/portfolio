@@ -30,7 +30,8 @@ a {
 
 html,body {
 	font-family: $proxima;
-	background-color: $bg-black;	
+	background-color: $bg-black;
+	color: $white;
 
 	font-size: 1rem;
 }
@@ -39,3 +40,5 @@ html,body {
 
 @import "blocks/header";
 @import "blocks/logo";
+
+@import "blocks/content-slider";

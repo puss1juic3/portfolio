@@ -6,5 +6,8 @@
 
 //Slick
 //= ../../../node_modules/slick-carousel/slick/slick.js
-//= components/slick.js
 
+$(document).ready(function(){
+    //Components
+    //= components/slick.js
+});
