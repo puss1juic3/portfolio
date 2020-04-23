@@ -1,0 +1,25 @@
+
+/* ===== Style reset ===== */
+@import "../../../node_modules/normalize.css/normalize";
+
+/* ===== Bootstrap grid ===== */
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+/* ===== Template vars ===== */
+@import "vars";
+
+/* ===== Fonts ===== */
+@import "fonts";
+
+:root {
+    font-size: 16px;
+}
+
+html,body {
+	font-family: $proxima;
+	background-color: $bg-black;	
+	line-height: 1;
+	font-size: 1rem;
+}
+
+/* ===== SCSS Blocks ===== */
