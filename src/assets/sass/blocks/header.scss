@@ -3,11 +3,17 @@
   &__menu {
     margin-left: auto;
 
+    transition: all .2s ease;
+
     &-icon {
       width: 1.188rem;
       height: 0.875rem;
 
       fill: $white;
+    }
+
+    &:hover {
+      opacity: .75;
     }
 
   }
