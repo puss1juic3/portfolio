@@ -1,0 +1,14 @@
+.header {
+
+  &__menu {
+    margin-left: auto;
+
+    &-icon {
+      width: 1.188rem;
+      height: 0.875rem;
+
+      fill: $white;
+    }
+
+  }
+}

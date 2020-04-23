@@ -11,6 +11,16 @@
 /* ===== Fonts ===== */
 @import "fonts";
 
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
 :root {
     font-size: 16px;
 }
@@ -18,8 +28,11 @@
 html,body {
 	font-family: $proxima;
 	background-color: $bg-black;	
-	line-height: 1;
+
 	font-size: 1rem;
 }
 
 /* ===== SCSS Blocks ===== */
+
+@import "blocks/header";
+@import "blocks/logo";
