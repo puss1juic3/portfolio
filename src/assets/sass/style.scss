@@ -33,14 +33,18 @@ ul {
 }
 
 html,body {
+	margin: 0;
+	padding: 0;
 	font-family: $proxima;
 	background-color: $bg-black;
 	color: $white;
-
+	height: 100%;
 	font-size: 1rem;
 }
 
 /* ===== SCSS Blocks ===== */
+
+@import "blocks/content";
 
 @import "blocks/header";
 @import "blocks/logo";

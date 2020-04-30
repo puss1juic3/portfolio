@@ -5,7 +5,7 @@ var scroll= null;
 contentSlider.slick({
     arrows: false,
     dots: true,
-    infinite: true,
+    infinite: false,
     vertical: true,
     verticalScrolling: true,
     swipe:true,
@@ -13,15 +13,15 @@ contentSlider.slick({
     customPaging: function(slick,index) {
         switch (index) {
             case 0:
-                return '<span class="numbers">' + '0' + (index + 1) + '</span>' + '<span class="text">Home</span>';
+                return '<span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Home</span>';
             case 1:
-                return '<span class="numbers">' + '0' + (index + 1) + '</span>' + '<span class="text">Works</span>';
+                return '<span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Works</span>';
             case 2:
-                return '<span class="numbers">' + '0' + (index + 1) + '</span>' + '<span class="text">About</span>';
+                return '<span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">About</span>';
             case 3:
-                return '<span class="numbers">' + '0' + (index + 1) + '</span>' + '<span class="text">Contacts</span>';
+                return '<span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Contacts</span>';
             case 4:
-                return '<span class="numbers">' + '0' + (index + 1) + '</span>' + '<span class="text">Hire us</span>';
+                return '<span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Hire us</span>';
         }
 
     }
