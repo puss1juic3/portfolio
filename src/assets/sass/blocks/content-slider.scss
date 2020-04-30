@@ -2,5 +2,82 @@
   display: flex;
   flex-grow: 1;
   flex-direction: row-reverse;
-  align-items: center;
+
+  .slick-dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+
+      width: 2px;
+
+
+      background-color: $white;
+      opacity: .15;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1.5rem;
+    }
+
+    li {
+      width: 6.875rem;
+      height: 100%;
+      position: relative;
+
+      color: $white;
+      font-family: $proxima;
+      font-size: .875rem;
+      font-weight: 300;
+    }
+
+    .nav__numbers {
+      position: absolute;
+      right: 3.5rem;
+
+      transition: all .2s linear;
+    }
+
+    .nav__item-dot {
+      display: block;
+
+      width: .3rem;
+      height: .3rem;
+      border-radius: 50%;
+
+      position: absolute;
+      left: 1.56rem;
+      transform: translateX(-50%);
+      top: .32rem;
+      background-color: $white;
+
+      opacity: 0.3
+    }
+
+    .nav__text {
+      display: none;
+    }
+    
+    .slick-active .nav__item-dot {
+      background-color: $blue;
+      opacity: 1;
+    }
+
+    .slick-active .nav__numbers {
+      transition: .2s;
+      left: 0;
+    }
+
+    .slick-active .nav__text {
+      position: absolute;
+      left: 2rem;
+      display: inline;
+      white-space: nowrap;
+    }
+  }
 }
