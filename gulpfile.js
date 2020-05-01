@@ -31,14 +31,14 @@ var path = {
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{woff}"
+        fonts: "src/assets/fonts/**/*.{woff,ttf}"
     },
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
-        fonts: "src/assets/fonts/**/*.{woff}"
+        fonts: "src/assets/fonts/**/*.{woff,ttf}"
     },
     clean: "./dist"
 }
