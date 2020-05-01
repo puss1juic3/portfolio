@@ -11,18 +11,14 @@ contentSlider.slick({
     swipe:true,
     swipeToSlide:true,
     customPaging: function(slick,index) {
-        switch (index) {
-            case 0:
-                return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Home</span><span class="nav__dot"></span>';
-            case 1:
-                return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Works</span><span class="nav__dot"></span>';
-            case 2:
-                return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">About</span><span class="nav__dot"></span>';
-            case 3:
-                return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Contacts</span><span class="nav__dot"></span>';
-            case 4:
-                return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">Hire us</span><span class="nav__dot"></span>';
-        }
+        var items = [
+            "Home",
+            "Works",
+            "About",
+            "Contacts",
+            "Hire us",
+        ];
+        return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">' + items[index]+ '</span><span class="nav__dot"></span>';
     }
 });
 
