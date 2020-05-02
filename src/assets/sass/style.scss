@@ -25,12 +25,25 @@
 	padding: 0;
 }
 
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+
 a {
 	text-decoration: none;
 }
 
 ul {
 	list-style: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 :root {
@@ -50,9 +63,14 @@ html,body {
 
 /* ===== SCSS Blocks ===== */
 
-@import "blocks/content";
+@import "blocks/content.scss";
 
-@import "blocks/header";
-@import "blocks/logo";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
 
-@import "blocks/content-slider";
+@import "blocks/content-slider.scss";
+
+@import "blocks/home.scss";
+@import "blocks/home-slider.scss";
+
+@import "blocks/btn.scss";

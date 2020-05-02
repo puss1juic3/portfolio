@@ -1,0 +1,52 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+
+  position: relative;
+
+  padding: .625rem;
+
+  &__text {
+    color: $white;
+    font-family: $proxima;
+    font-size: .875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.044rem;
+
+    margin-right: 1rem;
+    z-index: 2;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 14px;
+
+    fill: $white;
+    z-index: 2;
+  }
+
+  &::after {
+    display: block;
+    content: '';
+
+    position: absolute;
+    width: 82%;
+    height: 100%;
+    right: 0;
+
+    background-color: transparent;
+    z-index: 1;
+
+    transition: all .2s ease;
+  }
+
+  &:hover.btn::after {
+    width: 100%;
+  }
+
+  &--blue.btn::after {
+    background-color: $blue;
+  }
+
+}

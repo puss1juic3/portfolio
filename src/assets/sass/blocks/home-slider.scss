@@ -1,0 +1,29 @@
+.home-slider {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__page {
+    position: relative;
+    min-height: 462px;
+  }
+
+  &__heading {
+    color: $white;
+    font-family: $proxima-black;
+    font-size: 5.125rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: 0.128rem;
+
+    padding: 4rem 0;
+  }
+
+  &__image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+}
