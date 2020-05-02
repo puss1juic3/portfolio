@@ -3,7 +3,7 @@
   flex-grow: 1;
   flex-direction: row-reverse;
 
-  .slick-dots {
+  >.slick-dots {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

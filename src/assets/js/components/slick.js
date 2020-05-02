@@ -36,3 +36,26 @@ contentSlider.on('wheel', (function(e) {
         $(this).slick('slickPrev');
     }
 }));
+
+var homeSlider = $('.home-slider');
+
+homeSlider.slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+
+    customPaging: function(slick,index) {
+        var title = [
+            "Metiew & Smith",
+            "Fantasy interactive",
+            "Paul & shark",
+        ];
+        var text = [
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
+        ];
+        return '<h2 class="home-slider__tab-heading">' + title[index] + '</h2>' +
+            '<p class="home-slider__tab-text">' + text[index] + '</p>';
+    }
+});
