@@ -40,7 +40,7 @@
       position: absolute;
       left: 2rem;
 
-      transition: all .2s linear;
+      transition: all .2s ease;
     }
 
     .nav__item-dot {
@@ -53,7 +53,7 @@
       position: absolute;
       left: 1.56rem;
       transform: translateX(-50%);
-      top: .32rem;
+      top: 5%;
       background-color: $white;
 
       opacity: 1
@@ -80,7 +80,7 @@
       white-space: nowrap;
     }
 
-    .nav__dot {
+    .nav__dot-1, .nav__dot-2, .nav__dot-3 {
       display: block;
 
       width: 0.25rem;
@@ -90,31 +90,20 @@
       position: absolute;
       left: 1.56rem;
       transform: translate(-50%,-50%);
-      top: 55%;
+
       background-color: $white;
 
       opacity: 0.3;
+    }
 
-      &:before, &:after {
-        content: '';
-        display: block;
-
-        width: 0.25rem;
-        height: 0.25rem;
-        border-radius: 50%;
-
-        position: absolute;
-        background-color: $white;
-
-      }
-
-      &:before {
-        top: -2.5rem;
-      }
-
-      &:after {
-        bottom: -2.5rem;
-      }
+    .nav__dot-1 {
+      top: 30%;
+    }
+    .nav__dot-2 {
+      top: 55%;
+    }
+    .nav__dot-3 {
+      top: 80%;
     }
   }
 }

@@ -18,7 +18,7 @@ contentSlider.slick({
             "Contacts",
             "Hire us",
         ];
-        return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">' + items[index]+ '</span><span class="nav__dot"></span>';
+        return '<span class="nav__item-dot"></span><span class="nav__numbers">' + '0' + (index + 1) + '</span>' + '<span class="nav__text">' + items[index]+ '</span><span class="nav__dot-1"></span><span class="nav__dot-2"></span><span class="nav__dot-3"></span>';
     }
 });
 
