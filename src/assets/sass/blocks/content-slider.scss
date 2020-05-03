@@ -15,7 +15,6 @@
 
       width: 2px;
 
-
       background-color: $white;
       opacity: .15;
 
@@ -38,7 +37,7 @@
 
     .nav__numbers {
       position: absolute;
-      left: 2rem;
+      left: 2.2rem;
 
       transition: all .2s ease;
     }
@@ -53,7 +52,7 @@
       position: absolute;
       left: 1.56rem;
       transform: translateX(-50%);
-      top: 5%;
+      top: 3%;
       background-color: $white;
 
       opacity: 1
@@ -75,7 +74,7 @@
 
     .slick-active .nav__text {
       position: absolute;
-      left: 2rem;
+      left: 2.2rem;
       display: inline;
       white-space: nowrap;
     }
