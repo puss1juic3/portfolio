@@ -43,6 +43,8 @@ homeSlider.slick({
     arrows: false,
     dots: true,
     infinite: true,
+    swipe: false,
+    swipeToSlide:false,
 
     customPaging: function(slick,index) {
         var title = [
@@ -55,7 +57,13 @@ homeSlider.slick({
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do",
         ];
-        return '<h2 class="home-slider__tab-heading">' + title[index] + '</h2>' +
-            '<p class="home-slider__tab-text">' + text[index] + '</p>';
+        return '<div class="home-slider__tab">' +
+            '<h2 class="home-slider__tab-heading">' + title[index] + '</h2>' +
+            '<p class="home-slider__tab-text">' + text[index] + '</p>' +
+            '</div>';
     }
+});
+
+$(document).ready(function(){
+    homeSlider.css('height', $('.content-slider').height() + 'px');
 });
