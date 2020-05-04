@@ -64,6 +64,6 @@ homeSlider.slick({
     }
 });
 
-$(document).ready(function(){
-    homeSlider.css('height', $('.content-slider').height() + 'px');
-});
+//TODO Center for pages content
+//homeSlider.css('height', $('.content-slider').height() + 'px');
+

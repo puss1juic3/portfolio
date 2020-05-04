@@ -5,8 +5,9 @@
   justify-content: center;
 
   &__page {
-    position: relative;
-    min-height: 462px;
+    /* ===== Style display:inline-block by slick slider ===== */
+    display: flex !important;
+    justify-content: space-between;
   }
 
   &__heading {
@@ -21,10 +22,9 @@
   }
 
   &__image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   .slick-dots {
