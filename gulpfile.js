@@ -41,9 +41,7 @@ var path = {
         fonts: "src/assets/fonts/**/*.{woff,ttf}"
     },
     clean: "./dist"
-}
-
-
+};
 
 /* Tasks */
 function browserSync(done) {
