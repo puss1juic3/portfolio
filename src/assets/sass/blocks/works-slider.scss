@@ -1,19 +1,4 @@
 .works-slider {
-  .slick-arrow {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .slick-prev {
-    left: 0;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-
   &__item {
     display: inline-flex !important;
     flex-direction: column;
@@ -28,5 +13,36 @@
 
   &__desc {
     text-align: center;
+  }
+
+  .slick-arrow {
+    padding: 1.5rem;
+
+    border-radius: 50%;
+    background-color: $gray;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 18px;
+    height: 15px;
+
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+
+    fill: $white;
   }
 }
