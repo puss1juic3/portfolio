@@ -1,3 +1,10 @@
 .works {
+  &__title {
+    color: $white;
+    font-family: $proxima-black;
+    font-size: 1.875rem;
+    letter-spacing: 0.047rem;
 
+    text-align: center;
+  }
 }

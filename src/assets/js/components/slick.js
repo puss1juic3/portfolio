@@ -1,3 +1,4 @@
+//Content slider
 var contentSlider = $('.content-slider');
 var scrollCount = null;
 var scroll= null;
@@ -37,6 +38,7 @@ contentSlider.on('wheel', (function(e) {
     }
 }));
 
+//Home slider
 var homeSlider = $('.home-slider');
 
 homeSlider.slick({
@@ -66,4 +68,14 @@ homeSlider.slick({
 
 //TODO Center for pages content
 //homeSlider.css('height', $('.content-slider').height() + 'px');
+
+//Works slider
+var worksSlider = $('.works-slider').slick({
+    centerMode: true,
+    arrows:true,
+    slidesToShow: 3,
+    infinite:true,
+});
+
+
 
