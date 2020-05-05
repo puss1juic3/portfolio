@@ -1,5 +1,6 @@
 .works-slider {
   .slick-arrow {
+    content: '';
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

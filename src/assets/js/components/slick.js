@@ -70,12 +70,30 @@ homeSlider.slick({
 //homeSlider.css('height', $('.content-slider').height() + 'px');
 
 //Works slider
-var worksSlider = $('.works-slider').slick({
+var worksSlider = $('.works-slider');
+
+var ws__prev = $('.works-slider__prev');
+var ws__next = $('.works-slider__next');
+
+worksSlider.slick({
+    arrows: false,
     centerMode: true,
-    arrows:true,
     slidesToShow: 3,
     infinite:true,
 });
+
+ws__prev.appendTo('.works-slider>.slick-list');
+ws__next.appendTo('.works-slider>.slick-list');
+
+ws__prev.click(function () {
+    worksSlider.slick('slickPrev');
+});
+
+ws__next.click(function () {
+    worksSlider.slick('slickNext');
+});
+
+
 
 
 
