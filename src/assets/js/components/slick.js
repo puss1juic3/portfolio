@@ -93,6 +93,9 @@ ws__next.click(function () {
     worksSlider.slick('slickNext');
 });
 
+//TODO Fix center slick-slide
+//$('.works-slider.slick-slide[data-slick-index="0"]').addClass('.slick-center');
+
 
 
 

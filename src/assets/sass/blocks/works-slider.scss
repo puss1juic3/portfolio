@@ -27,7 +27,7 @@
   }
 
   &__text {
-    transform: scale(0);
+    display: none;
 
     font-size: 1rem;
     font-weight: 400;
@@ -65,9 +65,10 @@
     fill: $white;
   }
 
-  .slick-current {
+  //TODO Fix center slick-slide
+  .slick-center {
     .works-slider__text {
-      //TODO Get the central slide and animate it
+      display: inline;
     }
   }
 }
